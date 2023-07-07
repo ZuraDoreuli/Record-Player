@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Code Keeper</title>
+</head>
+<body>
+  <div class="player">
+    <div class="platter">
+      <span class="shadow"></span>
+      <span class="color"></span>
+    </div>
+    <div class="controller-wrapper">
+      <div class="controller">
+        <span class="footer"></span>
+        <span class="axis"></span>
+        <span class="head"></span>
+      </div>
+    </div>
+    <div class="volume">
+      <input 
+        type="range"
+        class="volume-range"
+        min="0"
+        max="1"
+        step="0.1"
+        value="0.8"
+      >
+    </div>
+    <div class="switcher-wrapper">
+      <div class="switcher"></div>
+      <span class="switcher-red"></span>
+      <span class="switcher-green"></span>
+    </div>
+  </div>
+  <div class="songs-library">
+    <div class="album">
+      <img src="./img/s-1.jpg" alt="Image">
+      <audio src="./music/s-1.mp3"></audio>
+    </div>
+    <div class="album">
+      <img src="./img/s-2.jpg" alt="Image">
+      <audio src="./music/s-2.mp3"></audio>
+    </div>
+    <div class="album">
+      <img src="./img/s-3.jpg" alt="Image">
+      <audio src="./music/s-3.mp3"></audio>
+    </div>
+    <div class="album">
+      <img src="./img/s-4.jpg" alt="Image">
+      <audio src="./music/s-4.mp3"></audio>
+    </div>
+    <div class="album">
+      <img src="./img/s-5.jpg" alt="Image">
+      <audio src="./music/s-5.mp3"></audio>
+    </div>
+    <div class="album">
+      <img src="./img/s-6.jpg" alt="Image">
+      <audio src="./music/s-6.mp3"></audio>
+    </div>
+  </div>
+
+  <audio src="./music/s-3.mp3" class="player-song" 
+  loop preload="auto"></audio>
+
+  <script src="./app.js"></script>
+</body>
+</html>
